@@ -28,3 +28,12 @@ p{
 body{
     background: #ccffcc;
 }
+mark{
+    background-color: red;
+}
+small{
+    color: orange;
+}
+sup{
+    color: blue;
+}
