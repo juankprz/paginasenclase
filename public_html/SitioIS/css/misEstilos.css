@@ -15,7 +15,12 @@ body{
 #menu{
     background: #ccff33;
     text-align: center;
+    padding: 10px 0px;
 }
 a{
     text-decoration: none;
+    padding: 5px;
+}
+a:hover{
+   background: red;
 }
