@@ -45,3 +45,42 @@ table#t01 th {
     background-color: #F2A30F;
     color: white;
 }
+.header {
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+    clear: both 
+}
+.menu{
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Left and right column */
+.column.side {
+    
+    float: left;
+    width: 30%;
+    padding: 30px;
+
+}
+
+
+
+
+
+
+.footer{
+   
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+
+}
