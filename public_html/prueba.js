@@ -5,4 +5,5 @@
  */
 
 
-document.write("soy java externo");
+document.write("<h1>CECAR</h1>");
+document.write("<hr/>");
