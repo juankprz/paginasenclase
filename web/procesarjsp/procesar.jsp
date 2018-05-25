@@ -13,7 +13,12 @@
     </head>
     
     <% 
-     out.println("mi nombre es :"+request.getParameter("nombre"));
+        if(request.getParameter("nombre")==null || request.getParameter("nombre").isEmpty()){
+             response.sendRedirect("../formulario.html");
+        }else{
+            out.println("mi nombre es :"+request.getParameter("nombre"));
+        }
+     
     
     %>
 </html>
