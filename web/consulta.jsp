@@ -4,6 +4,9 @@
     Author     : 1103220136
 --%>
 
+<%@page import="logicadelnegocio.departamento"%>
+<%@page import="persistencia.Conexion"%>
+<%@page import="persistencia.OperacionesBD"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,12 +15,12 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <form action="consulta.jsp" method="POST">
-            <label> Ingrese nombre de departamento</label>
-            <br/>
-            <input type="text" name="nombreDepartamento">
-            <br/>
-            <input type="submit" value="Consultar">
-        </form>
+        <%
+            OperacionesBD op = new OperacionesBD();
+            departamento dpto= op.consultar(Conexion.obtener(), request.getParameter("nombreDepartamento"));
+            out.println(dpto.getNombredeldepartamento());
+            out.println(dpto.getNombrecapital());
+            out.println(dpto.getNumeromunicipios());
+            %>
     </body>
 </html>
